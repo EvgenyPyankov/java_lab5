@@ -1,12 +1,6 @@
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.MouseAdapter;
-import java.awt.event.MouseEvent;
-import java.net.DatagramPacket;
-import java.net.DatagramSocket;
-import java.net.InetAddress;
 import java.util.*;
-import java.io.*;
 
 public class PaintPanel extends JPanel{
     Color graphicBackgroundColor = new Color(243,210,120);

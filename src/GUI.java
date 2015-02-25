@@ -1,8 +1,5 @@
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.awt.event.MouseAdapter;
-import java.awt.geom.Arc2D;
+import java.awt.event.*;
 import javax.swing.*;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
@@ -147,7 +144,6 @@ public class GUI extends JFrame {
         Thread AnimationThread = new Thread(animation);
         AnimationThread.start();
         pointCoordinatesLabel.setText("(" + X + "; " + Y + ")");
-        //GUI.paintPanel.repaint();
     }
 
     public static int getLocal(){

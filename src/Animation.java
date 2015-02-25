@@ -1,7 +1,4 @@
-import javax.swing.*;
-import java.net.DatagramPacket;
-import java.net.DatagramSocket;
-import java.net.InetAddress;
+import java.net.*;
 
 class Animation implements Runnable
 {
@@ -15,14 +12,12 @@ class Animation implements Runnable
     DatagramPacket receivePacket;
     public void run()
     {
-        //JOptionPane.showMessageDialog(null, GUI.paintPanel.r/znam);
         try {
             DatagramSocket clientSocket = new DatagramSocket();
             InetAddress IPAdress = InetAddress.getLocalHost();
             byte[] sendData = new byte[1024];
             byte[] receiveData = new byte[1];
             clientSocket.setSoTimeout(40);
-
 
         while(true)
         {
@@ -55,7 +50,6 @@ class Animation implements Runnable
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-
 
             if (index==0) GUI.paintPanel.repaint();
         }
