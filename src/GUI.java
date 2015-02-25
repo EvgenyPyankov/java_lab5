@@ -8,7 +8,6 @@ import javax.swing.event.ListSelectionListener;
 import java.awt.event.MouseEvent;
 import java.util.*;
 
-
 public class GUI extends JFrame {
     static private int local;
     JPanel pointCoordinatesPanel;
@@ -25,7 +24,6 @@ public class GUI extends JFrame {
             new Locale("ru"),
             new Locale("sr")
     };
-    public static boolean connection=false;
 
     public GUI() {
         messages = ResourceBundle.getBundle("MessageBundle",supportedLocales[GUI.getLocal()]);
@@ -59,7 +57,6 @@ public class GUI extends JFrame {
                 pressbutton(X,Y);
             }
         });
-
     }
 
     void prepareInfoPanel()

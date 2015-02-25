@@ -56,29 +56,9 @@ public class PaintPanel extends JPanel{
         while (iterator.hasNext())
         {
             Point m=iterator.next();
-            //Client client = new Client(m.x,m.y, PaintPanel.rad/PaintPanel.scale);
 
-           // Thread clientThread = new Client(m.x,m.y, PaintPanel.rad/PaintPanel.scale);
-            //clientThread.start();
-
-
-
-           // Client client1 = new Client(m.x, m.y, PaintPanel.rad / PaintPanel.scale);
-          // client1.check=client1.run();
-//            try {
-//                Thread.sleep(100);
-//            }
-//            catch(Exception e){
-//                System.out.println("Error: "+e);
-//            }
             int check = m.getIsHit();
-                    //Client.start(m.x, m.y, PaintPanel.rad / PaintPanel.scale);
-//            try {
-//                Thread.sleep(50);
-//            }
-//            catch (Exception e){
-//                System.out.println(e);
-//            }
+
             if (check==1) g.setColor(Color.red);
             else if (check==0) g.setColor(Color.green);
             else if (check==-1) g.setColor(Color.DARK_GRAY);
